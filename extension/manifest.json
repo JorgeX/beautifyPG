@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Blog Post Beautifier",
+  "version": "1.0",
+  "description": "Makes blog posts more readable with modern styling",
+  "content_scripts": [
+    {
+      "matches": ["*://*.paulgraham.com/*", "file:///*"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
